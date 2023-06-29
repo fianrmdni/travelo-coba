@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        
+        {
+            "type": "chrome",
+            "name": "http://travelo\\starter\\node_modules\\styled-jsx\\dist\\index\\index.js:449:36)",
+            "request": "launch",
+            "url": "http://travelo\\starter\\node_modules\\styled-jsx\\dist\\index\\index.js:449:36)"
+        }
+    ]
+}

@@ -1,19 +1,36 @@
-import cn from "classnames"
+import type { ButtonHTMLAttributes, ReactNode } from "react"
+import clsx from "clsx"
+
+import { FaFacebookF, FaGoogle } from 'react-icons/fa'
 import styles from './Button.module.css'
 
+
 type Props = {
-    children: string
+    children: ReactNode | string
     className?: string
     fullWidth?: boolean
     outLined?: boolean
+    type?: ButtonHTMLAttributes<HTMLButtonElement>['type']
+    variant?: 'primary' | 'google' | 'facebook'
 }
 
-const Button = ({children, className = '', fullWidth, outLined}: Props) => {
-    return(
-        <button className={cn(styles.button, className,{
-            [styles.fullwidth]: fullWidth,
-            [styles.outLined]: outLined
-        })}>
+const Button = ({ children, className = '', fullWidth, outLined, type, variant = 'primary' }: Props) => {
+    return (
+        <button
+            type={type}
+            className={clsx(
+                styles.button,
+                className,
+                fullWidth && styles.fullWidth,
+                outLined && styles.outLined,
+                variant === 'primary' && 'bg-blue-100',
+                variant === 'google' && 'bg-red-100',
+                variant === 'facebook' && 'bg-facebook'
+            )}>
+            {variant === 'facebook' && (
+                <FaFacebookF className="text-white h-6 w-6 mr-2" />
+            )}
+            {variant === 'google' && <FaGoogle className="text-white h-6 w-6 mr-2" />}
             {children}
         </button>
     )

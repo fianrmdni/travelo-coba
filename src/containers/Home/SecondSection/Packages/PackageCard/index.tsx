@@ -36,10 +36,10 @@ const PackageCard = () => {
                     </p>
 
                     <div className="flex justify-between gap-3">
-                        <Button fullWidth outLined>
+                        <Button fullWidth outLined >
                             Lihat Detail
                         </Button>
-                        <Button fullWidth>
+                        <Button fullWidth >
                             Pesan
                         </Button>
                     </div>

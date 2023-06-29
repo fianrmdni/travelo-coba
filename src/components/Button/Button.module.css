@@ -1,6 +1,6 @@
 .button {
-    @apply bg-blue-100 text-white p-3 h-[45px] text-heading-5 font-label font-bold rounded-md; 
-    max-width: 190px;
+    @apply text-white p-3 h-[45px] text-heading-5 font-label font-bold rounded-md flex justify-center items-center;
+    /*max-width: 190px;*/
     /*max-w-[190px]*/
 
 }

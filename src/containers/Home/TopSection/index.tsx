@@ -1,8 +1,8 @@
 import Container from 'components/Container';
 import Button from 'components/Button';
-import InfoItem from './InfoItem'
+import InfoItem from './InfoItem';
 
-import styles from './TopSection.module.css'
+import styles from './TopSection.module.css';
 
 const TopSection = () => {
     return (
@@ -16,7 +16,7 @@ const TopSection = () => {
                         <p className="text-heading-3 text-gray-70 w-[526px] mb-7">
                             Jelajahi dunia yang indah dengan satu sentuhan dengan pesan tiket di Travel kamu akan dapatkan pelayanan terbaik untuk wisata liburanmu kemana saja dan kapan saja
                         </p>
-                        <Button>
+                        <Button className='max-w-[190px]'>
                             Lihat Paket
                         </Button>
                     </div>
@@ -42,4 +42,4 @@ const TopSection = () => {
     )
 }
 
-export default TopSection;
+export default TopSection

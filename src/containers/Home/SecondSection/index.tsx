@@ -11,7 +11,6 @@ import Testimonials from './Testimonials';
 
 const SecondSection = () => {
     return (
-
         <section className={styles.section}>
             <Container>
                 <PromoCarousel/>
