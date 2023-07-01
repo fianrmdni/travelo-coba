@@ -24,11 +24,15 @@ const Login = () => {
                             Daftar di sini
                         </a>
                     </div>
+
                     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col mt-8 ">
                         <Input
                             register={register}
                             errors={errors}
-                            required={{ value: true, message: 'Alamat email harus diisi.' }}
+                            required={{
+                                value: true,
+                                message: 'Alamat email harus diisi.'
+                            }}
                             pattern={{
                                 value: REG_EXP.email,
                                 message: 'Gunakan formal email dengan benar.'
