@@ -25,6 +25,9 @@
       "containers/*": [
         "./src/containers/*"
       ],
+      "constants/*": [
+        "./src/constants/*"
+      ],
       "public/*": [
         "./public/*"
       ]

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link';
 
 import Container from 'components/Container';
 import Button from 'components/Button';
@@ -24,9 +25,12 @@ const Header = () => {
                     </div>
                     <div className="flex gap-5">
                         <Nav />
-                        <Button className='w-[190px]'>
-                            Masuk
-                        </Button>
+
+                        <Link href="/login">
+                            <Button className='w-[190px]'>
+                                Masuk
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             </Container>
