@@ -43,7 +43,9 @@ const Login = () => {
                             placeholder="Masukkan alamat email"
                             className="mb-6"
                         />
-
+                    </form>
+                    
+                    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col mt-8 ">
                         <Input
                             register={register}
                             errors={errors}
